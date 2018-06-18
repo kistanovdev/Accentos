@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B826A6F20D8763E00BEAEEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B826A6E20D8763E00BEAEEB /* AppDelegate.swift */; };
+		4B826A7120D8763E00BEAEEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B826A7020D8763E00BEAEEB /* ViewController.swift */; };
+		4B826A7420D8763E00BEAEEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B826A7220D8763E00BEAEEB /* Main.storyboard */; };
+		4B826A7720D8763E00BEAEEB /* Accentos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B826A7520D8763E00BEAEEB /* Accentos.xcdatamodeld */; };
+		4B826A7920D8764000BEAEEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B826A7820D8764000BEAEEB /* Assets.xcassets */; };
+		4B826A7C20D8764000BEAEEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B826A7A20D8764000BEAEEB /* LaunchScreen.storyboard */; };
+		4B826A8720D8764000BEAEEB /* AccentosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B826A8620D8764000BEAEEB /* AccentosTests.swift */; };
+		4B826A9220D8764000BEAEEB /* AccentosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B826A9120D8764000BEAEEB /* AccentosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B826A8320D8764000BEAEEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B826A6320D8763E00BEAEEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B826A6A20D8763E00BEAEEB;
+			remoteInfo = Accentos;
+		};
+		4B826A8E20D8764000BEAEEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B826A6320D8763E00BEAEEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B826A6A20D8763E00BEAEEB;
+			remoteInfo = Accentos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B826A6B20D8763E00BEAEEB /* Accentos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accentos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B826A6E20D8763E00BEAEEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B826A7020D8763E00BEAEEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B826A7320D8763E00BEAEEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B826A7620D8763E00BEAEEB /* Accentos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Accentos.xcdatamodel; sourceTree = "<group>"; };
+		4B826A7820D8764000BEAEEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B826A7B20D8764000BEAEEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B826A7D20D8764000BEAEEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B826A8220D8764000BEAEEB /* AccentosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccentosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B826A8620D8764000BEAEEB /* AccentosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentosTests.swift; sourceTree = "<group>"; };
+		4B826A8820D8764000BEAEEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B826A8D20D8764000BEAEEB /* AccentosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccentosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B826A9120D8764000BEAEEB /* AccentosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentosUITests.swift; sourceTree = "<group>"; };
+		4B826A9320D8764000BEAEEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B826A6820D8763E00BEAEEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B826A7F20D8764000BEAEEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B826A8A20D8764000BEAEEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B826A6220D8763E00BEAEEB = {
+			isa = PBXGroup;
+			children = (
+				4B826A6D20D8763E00BEAEEB /* Accentos */,
+				4B826A8520D8764000BEAEEB /* AccentosTests */,
+				4B826A9020D8764000BEAEEB /* AccentosUITests */,
+				4B826A6C20D8763E00BEAEEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B826A6C20D8763E00BEAEEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B826A6B20D8763E00BEAEEB /* Accentos.app */,
+				4B826A8220D8764000BEAEEB /* AccentosTests.xctest */,
+				4B826A8D20D8764000BEAEEB /* AccentosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B826A6D20D8763E00BEAEEB /* Accentos */ = {
+			isa = PBXGroup;
+			children = (
+				4B826A6E20D8763E00BEAEEB /* AppDelegate.swift */,
+				4B826A7020D8763E00BEAEEB /* ViewController.swift */,
+				4B826A7220D8763E00BEAEEB /* Main.storyboard */,
+				4B826A7820D8764000BEAEEB /* Assets.xcassets */,
+				4B826A7A20D8764000BEAEEB /* LaunchScreen.storyboard */,
+				4B826A7D20D8764000BEAEEB /* Info.plist */,
+				4B826A7520D8763E00BEAEEB /* Accentos.xcdatamodeld */,
+			);
+			path = Accentos;
+			sourceTree = "<group>";
+		};
+		4B826A8520D8764000BEAEEB /* AccentosTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B826A8620D8764000BEAEEB /* AccentosTests.swift */,
+				4B826A8820D8764000BEAEEB /* Info.plist */,
+			);
+			path = AccentosTests;
+			sourceTree = "<group>";
+		};
+		4B826A9020D8764000BEAEEB /* AccentosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B826A9120D8764000BEAEEB /* AccentosUITests.swift */,
+				4B826A9320D8764000BEAEEB /* Info.plist */,
+			);
+			path = AccentosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B826A6A20D8763E00BEAEEB /* Accentos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B826A9620D8764000BEAEEB /* Build configuration list for PBXNativeTarget "Accentos" */;
+			buildPhases = (
+				4B826A6720D8763E00BEAEEB /* Sources */,
+				4B826A6820D8763E00BEAEEB /* Frameworks */,
+				4B826A6920D8763E00BEAEEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Accentos;
+			productName = Accentos;
+			productReference = 4B826A6B20D8763E00BEAEEB /* Accentos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B826A8120D8764000BEAEEB /* AccentosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B826A9920D8764000BEAEEB /* Build configuration list for PBXNativeTarget "AccentosTests" */;
+			buildPhases = (
+				4B826A7E20D8764000BEAEEB /* Sources */,
+				4B826A7F20D8764000BEAEEB /* Frameworks */,
+				4B826A8020D8764000BEAEEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B826A8420D8764000BEAEEB /* PBXTargetDependency */,
+			);
+			name = AccentosTests;
+			productName = AccentosTests;
+			productReference = 4B826A8220D8764000BEAEEB /* AccentosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B826A8C20D8764000BEAEEB /* AccentosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B826A9C20D8764000BEAEEB /* Build configuration list for PBXNativeTarget "AccentosUITests" */;
+			buildPhases = (
+				4B826A8920D8764000BEAEEB /* Sources */,
+				4B826A8A20D8764000BEAEEB /* Frameworks */,
+				4B826A8B20D8764000BEAEEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B826A8F20D8764000BEAEEB /* PBXTargetDependency */,
+			);
+			name = AccentosUITests;
+			productName = AccentosUITests;
+			productReference = 4B826A8D20D8764000BEAEEB /* AccentosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B826A6320D8763E00BEAEEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Daniil Kistanov";
+				TargetAttributes = {
+					4B826A6A20D8763E00BEAEEB = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					4B826A8120D8764000BEAEEB = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 4B826A6A20D8763E00BEAEEB;
+					};
+					4B826A8C20D8764000BEAEEB = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 4B826A6A20D8763E00BEAEEB;
+					};
+				};
+			};
+			buildConfigurationList = 4B826A6620D8763E00BEAEEB /* Build configuration list for PBXProject "Accentos" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B826A6220D8763E00BEAEEB;
+			productRefGroup = 4B826A6C20D8763E00BEAEEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B826A6A20D8763E00BEAEEB /* Accentos */,
+				4B826A8120D8764000BEAEEB /* AccentosTests */,
+				4B826A8C20D8764000BEAEEB /* AccentosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B826A6920D8763E00BEAEEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B826A7C20D8764000BEAEEB /* LaunchScreen.storyboard in Resources */,
+				4B826A7920D8764000BEAEEB /* Assets.xcassets in Resources */,
+				4B826A7420D8763E00BEAEEB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B826A8020D8764000BEAEEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B826A8B20D8764000BEAEEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B826A6720D8763E00BEAEEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B826A7120D8763E00BEAEEB /* ViewController.swift in Sources */,
+				4B826A6F20D8763E00BEAEEB /* AppDelegate.swift in Sources */,
+				4B826A7720D8763E00BEAEEB /* Accentos.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B826A7E20D8764000BEAEEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B826A8720D8764000BEAEEB /* AccentosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B826A8920D8764000BEAEEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B826A9220D8764000BEAEEB /* AccentosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B826A8420D8764000BEAEEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B826A6A20D8763E00BEAEEB /* Accentos */;
+			targetProxy = 4B826A8320D8764000BEAEEB /* PBXContainerItemProxy */;
+		};
+		4B826A8F20D8764000BEAEEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B826A6A20D8763E00BEAEEB /* Accentos */;
+			targetProxy = 4B826A8E20D8764000BEAEEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B826A7220D8763E00BEAEEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B826A7320D8763E00BEAEEB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B826A7A20D8764000BEAEEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B826A7B20D8764000BEAEEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B826A9420D8764000BEAEEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B826A9520D8764000BEAEEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B826A9720D8764000BEAEEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LDK299WHA;
+				INFOPLIST_FILE = Accentos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kistanod.Accentos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B826A9820D8764000BEAEEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LDK299WHA;
+				INFOPLIST_FILE = Accentos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kistanod.Accentos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4B826A9A20D8764000BEAEEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LDK299WHA;
+				INFOPLIST_FILE = AccentosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kistanod.AccentosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Accentos.app/Accentos";
+			};
+			name = Debug;
+		};
+		4B826A9B20D8764000BEAEEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LDK299WHA;
+				INFOPLIST_FILE = AccentosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kistanod.AccentosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Accentos.app/Accentos";
+			};
+			name = Release;
+		};
+		4B826A9D20D8764000BEAEEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LDK299WHA;
+				INFOPLIST_FILE = AccentosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kistanod.AccentosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Accentos;
+			};
+			name = Debug;
+		};
+		4B826A9E20D8764000BEAEEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LDK299WHA;
+				INFOPLIST_FILE = AccentosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kistanod.AccentosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Accentos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B826A6620D8763E00BEAEEB /* Build configuration list for PBXProject "Accentos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B826A9420D8764000BEAEEB /* Debug */,
+				4B826A9520D8764000BEAEEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B826A9620D8764000BEAEEB /* Build configuration list for PBXNativeTarget "Accentos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B826A9720D8764000BEAEEB /* Debug */,
+				4B826A9820D8764000BEAEEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B826A9920D8764000BEAEEB /* Build configuration list for PBXNativeTarget "AccentosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B826A9A20D8764000BEAEEB /* Debug */,
+				4B826A9B20D8764000BEAEEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B826A9C20D8764000BEAEEB /* Build configuration list for PBXNativeTarget "AccentosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B826A9D20D8764000BEAEEB /* Debug */,
+				4B826A9E20D8764000BEAEEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4B826A7520D8763E00BEAEEB /* Accentos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4B826A7620D8763E00BEAEEB /* Accentos.xcdatamodel */,
+			);
+			currentVersion = 4B826A7620D8763E00BEAEEB /* Accentos.xcdatamodel */;
+			path = Accentos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4B826A6320D8763E00BEAEEB /* Project object */;
+}
