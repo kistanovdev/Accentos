@@ -21,15 +21,17 @@ class ViewController: UIViewController {
         } else {
             result.text = "No such word"
         }
-        
+        //dismiss the keyboard once pressed submit
+        wordTyped.resignFirstResponder()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        wordTyped.delegate = self
     }
     //function that build a dictionary out of a json file
     //I prepared 26 json with 160000 spanish words
-    //based on that letter it returns 
+    //based on that letter it returns
     func findDict(firstChar:Character) -> [String:String] {
         do {
             let path = Bundle.main.path(forResource: String(firstChar), ofType: "json")
@@ -43,4 +45,12 @@ class ViewController: UIViewController {
         }
     }
 }
+
+extension ViewController : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
+ 
 
