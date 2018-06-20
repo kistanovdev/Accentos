@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     //find the json file matching the first letter
     @IBOutlet weak var result: UILabel!
     @IBOutlet weak var wordTyped: UITextField!
+    @IBOutlet weak var wordInfo: UILabel!
     
     @IBAction func wordSubmitted(_ sender: Any) {
         let word = wordTyped.text!.lowercased()
@@ -29,6 +30,8 @@ class ViewController: UIViewController {
             result.text = "Invalid input"
             wordTyped.resignFirstResponder()
         }
+        wordInfo.text = "You typed " + word
+        wordTyped.text = ""
     }
     
     //function that build a dictionary out of a json file
