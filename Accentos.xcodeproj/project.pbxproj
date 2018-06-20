@@ -15,6 +15,32 @@
 		4B826A7C20D8764000BEAEEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B826A7A20D8764000BEAEEB /* LaunchScreen.storyboard */; };
 		4B826A8720D8764000BEAEEB /* AccentosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B826A8620D8764000BEAEEB /* AccentosTests.swift */; };
 		4B826A9220D8764000BEAEEB /* AccentosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B826A9120D8764000BEAEEB /* AccentosUITests.swift */; };
+		4BA3360E20D9CA1B0040833A /* o.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA335F420D9CA180040833A /* o.json */; };
+		4BA3360F20D9CA1B0040833A /* y.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA335F520D9CA180040833A /* y.json */; };
+		4BA3361020D9CA1B0040833A /* j.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA335F620D9CA180040833A /* j.json */; };
+		4BA3361120D9CA1B0040833A /* u.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA335F720D9CA180040833A /* u.json */; };
+		4BA3361220D9CA1B0040833A /* n.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA335F820D9CA190040833A /* n.json */; };
+		4BA3361320D9CA1B0040833A /* s.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA335F920D9CA190040833A /* s.json */; };
+		4BA3361420D9CA1B0040833A /* v.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA335FA20D9CA190040833A /* v.json */; };
+		4BA3361520D9CA1B0040833A /* d.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA335FB20D9CA190040833A /* d.json */; };
+		4BA3361620D9CA1B0040833A /* m.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA335FC20D9CA190040833A /* m.json */; };
+		4BA3361720D9CA1B0040833A /* i.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA335FD20D9CA190040833A /* i.json */; };
+		4BA3361820D9CA1B0040833A /* h.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA335FE20D9CA190040833A /* h.json */; };
+		4BA3361920D9CA1B0040833A /* x.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA335FF20D9CA190040833A /* x.json */; };
+		4BA3361A20D9CA1B0040833A /* t.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3360020D9CA190040833A /* t.json */; };
+		4BA3361B20D9CA1B0040833A /* b.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3360120D9CA190040833A /* b.json */; };
+		4BA3361C20D9CA1B0040833A /* l.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3360220D9CA1A0040833A /* l.json */; };
+		4BA3361D20D9CA1B0040833A /* w.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3360320D9CA1A0040833A /* w.json */; };
+		4BA3361E20D9CA1B0040833A /* f.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3360420D9CA1A0040833A /* f.json */; };
+		4BA3361F20D9CA1B0040833A /* e.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3360520D9CA1A0040833A /* e.json */; };
+		4BA3362020D9CA1B0040833A /* a.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3360620D9CA1A0040833A /* a.json */; };
+		4BA3362120D9CA1B0040833A /* g.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3360720D9CA1A0040833A /* g.json */; };
+		4BA3362220D9CA1B0040833A /* k.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3360820D9CA1A0040833A /* k.json */; };
+		4BA3362320D9CA1B0040833A /* p.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3360920D9CA1A0040833A /* p.json */; };
+		4BA3362420D9CA1B0040833A /* r.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3360A20D9CA1B0040833A /* r.json */; };
+		4BA3362520D9CA1B0040833A /* z.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3360B20D9CA1B0040833A /* z.json */; };
+		4BA3362620D9CA1B0040833A /* c.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3360C20D9CA1B0040833A /* c.json */; };
+		4BA3362720D9CA1B0040833A /* q.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3360D20D9CA1B0040833A /* q.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +75,32 @@
 		4B826A8D20D8764000BEAEEB /* AccentosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccentosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B826A9120D8764000BEAEEB /* AccentosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentosUITests.swift; sourceTree = "<group>"; };
 		4B826A9320D8764000BEAEEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA335F420D9CA180040833A /* o.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = o.json; sourceTree = "<group>"; };
+		4BA335F520D9CA180040833A /* y.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = y.json; sourceTree = "<group>"; };
+		4BA335F620D9CA180040833A /* j.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = j.json; sourceTree = "<group>"; };
+		4BA335F720D9CA180040833A /* u.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = u.json; sourceTree = "<group>"; };
+		4BA335F820D9CA190040833A /* n.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = n.json; sourceTree = "<group>"; };
+		4BA335F920D9CA190040833A /* s.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = s.json; sourceTree = "<group>"; };
+		4BA335FA20D9CA190040833A /* v.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v.json; sourceTree = "<group>"; };
+		4BA335FB20D9CA190040833A /* d.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = d.json; sourceTree = "<group>"; };
+		4BA335FC20D9CA190040833A /* m.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = m.json; sourceTree = "<group>"; };
+		4BA335FD20D9CA190040833A /* i.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = i.json; sourceTree = "<group>"; };
+		4BA335FE20D9CA190040833A /* h.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = h.json; sourceTree = "<group>"; };
+		4BA335FF20D9CA190040833A /* x.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = x.json; sourceTree = "<group>"; };
+		4BA3360020D9CA190040833A /* t.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t.json; sourceTree = "<group>"; };
+		4BA3360120D9CA190040833A /* b.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = b.json; sourceTree = "<group>"; };
+		4BA3360220D9CA1A0040833A /* l.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = l.json; sourceTree = "<group>"; };
+		4BA3360320D9CA1A0040833A /* w.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = w.json; sourceTree = "<group>"; };
+		4BA3360420D9CA1A0040833A /* f.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = f.json; sourceTree = "<group>"; };
+		4BA3360520D9CA1A0040833A /* e.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = e.json; sourceTree = "<group>"; };
+		4BA3360620D9CA1A0040833A /* a.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = a.json; sourceTree = "<group>"; };
+		4BA3360720D9CA1A0040833A /* g.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = g.json; sourceTree = "<group>"; };
+		4BA3360820D9CA1A0040833A /* k.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = k.json; sourceTree = "<group>"; };
+		4BA3360920D9CA1A0040833A /* p.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = p.json; sourceTree = "<group>"; };
+		4BA3360A20D9CA1B0040833A /* r.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = r.json; sourceTree = "<group>"; };
+		4BA3360B20D9CA1B0040833A /* z.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = z.json; sourceTree = "<group>"; };
+		4BA3360C20D9CA1B0040833A /* c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = c.json; sourceTree = "<group>"; };
+		4BA3360D20D9CA1B0040833A /* q.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = q.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +156,32 @@
 				4B826A7220D8763E00BEAEEB /* Main.storyboard */,
 				4B826A7820D8764000BEAEEB /* Assets.xcassets */,
 				4B826A7A20D8764000BEAEEB /* LaunchScreen.storyboard */,
+				4BA3360620D9CA1A0040833A /* a.json */,
+				4BA3360120D9CA190040833A /* b.json */,
+				4BA3360C20D9CA1B0040833A /* c.json */,
+				4BA335FB20D9CA190040833A /* d.json */,
+				4BA3360520D9CA1A0040833A /* e.json */,
+				4BA3360420D9CA1A0040833A /* f.json */,
+				4BA3360720D9CA1A0040833A /* g.json */,
+				4BA335FE20D9CA190040833A /* h.json */,
+				4BA335FD20D9CA190040833A /* i.json */,
+				4BA335F620D9CA180040833A /* j.json */,
+				4BA3360820D9CA1A0040833A /* k.json */,
+				4BA3360220D9CA1A0040833A /* l.json */,
+				4BA335FC20D9CA190040833A /* m.json */,
+				4BA335F820D9CA190040833A /* n.json */,
+				4BA335F420D9CA180040833A /* o.json */,
+				4BA3360920D9CA1A0040833A /* p.json */,
+				4BA3360D20D9CA1B0040833A /* q.json */,
+				4BA3360A20D9CA1B0040833A /* r.json */,
+				4BA335F920D9CA190040833A /* s.json */,
+				4BA3360020D9CA190040833A /* t.json */,
+				4BA335F720D9CA180040833A /* u.json */,
+				4BA335FA20D9CA190040833A /* v.json */,
+				4BA3360320D9CA1A0040833A /* w.json */,
+				4BA335FF20D9CA190040833A /* x.json */,
+				4BA335F520D9CA180040833A /* y.json */,
+				4BA3360B20D9CA1B0040833A /* z.json */,
 				4B826A7D20D8764000BEAEEB /* Info.plist */,
 				4B826A7520D8763E00BEAEEB /* Accentos.xcdatamodeld */,
 			);
@@ -232,8 +310,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA3362420D9CA1B0040833A /* r.json in Resources */,
+				4BA3362320D9CA1B0040833A /* p.json in Resources */,
+				4BA3362520D9CA1B0040833A /* z.json in Resources */,
+				4BA3361E20D9CA1B0040833A /* f.json in Resources */,
+				4BA3361C20D9CA1B0040833A /* l.json in Resources */,
+				4BA3361F20D9CA1B0040833A /* e.json in Resources */,
+				4BA3362120D9CA1B0040833A /* g.json in Resources */,
+				4BA3361920D9CA1B0040833A /* x.json in Resources */,
+				4BA3361720D9CA1B0040833A /* i.json in Resources */,
+				4BA3361A20D9CA1B0040833A /* t.json in Resources */,
+				4BA3361420D9CA1B0040833A /* v.json in Resources */,
+				4BA3362720D9CA1B0040833A /* q.json in Resources */,
+				4BA3361120D9CA1B0040833A /* u.json in Resources */,
+				4BA3361320D9CA1B0040833A /* s.json in Resources */,
+				4BA3360F20D9CA1B0040833A /* y.json in Resources */,
 				4B826A7C20D8764000BEAEEB /* LaunchScreen.storyboard in Resources */,
+				4BA3362020D9CA1B0040833A /* a.json in Resources */,
+				4BA3361820D9CA1B0040833A /* h.json in Resources */,
+				4BA3360E20D9CA1B0040833A /* o.json in Resources */,
+				4BA3361220D9CA1B0040833A /* n.json in Resources */,
+				4BA3361620D9CA1B0040833A /* m.json in Resources */,
+				4BA3362220D9CA1B0040833A /* k.json in Resources */,
 				4B826A7920D8764000BEAEEB /* Assets.xcassets in Resources */,
+				4BA3361B20D9CA1B0040833A /* b.json in Resources */,
+				4BA3361520D9CA1B0040833A /* d.json in Resources */,
+				4BA3361020D9CA1B0040833A /* j.json in Resources */,
+				4BA3362620D9CA1B0040833A /* c.json in Resources */,
+				4BA3361D20D9CA1B0040833A /* w.json in Resources */,
 				4B826A7420D8763E00BEAEEB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
