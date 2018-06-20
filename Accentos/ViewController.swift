@@ -18,15 +18,10 @@ class ViewController: UIViewController {
         let word = wordTyped.text!.lowercased()
         if !word.isEmpty && isValidString(input:word) {
             let dict = findDict(firstChar: word[(word.startIndex)])
-            if dict[word] != nil && !dict.isEmpty {
-                if word == dict[word] {
-                    result.text = "No accent here"
-                } else {
-                    result.text = dict[word]
-                }
-            } else {
-                result.text = "No such word"
-            }
+            if dict[word] != nil {//if key exists
+                if word == dict[word] {result.text = "No accent here"}
+                else {result.text = dict[word]}
+            } else {result.text = "No such word"}
             //dismiss the keyboard once pressed submit
             wordTyped.resignFirstResponder()
         } else {
@@ -55,9 +50,7 @@ class ViewController: UIViewController {
     func isValidString(input:String) -> Bool {
         let alphabet = "abcdefghijklmnopqrstuvwxyz"
         for letter in input {
-            if !alphabet.contains(letter) {
-                return false
-            }
+            if !alphabet.contains(letter) {return false}
         }
         return true
     }
