@@ -3,6 +3,11 @@ import Foundation
 
 class ViewController: UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        wordTyped.delegate = self
+    }
+    
     //the three fields that are responsible
     //find the word
     //find the json file matching the first letter
@@ -10,25 +15,27 @@ class ViewController: UIViewController {
     @IBOutlet weak var wordTyped: UITextField!
     
     @IBAction func wordSubmitted(_ sender: Any) {
-        let word = wordTyped.text!
-        let dict = findDict(firstChar: word[(word.startIndex)])
-        if dict[word] != nil && !dict.isEmpty {
-            if word == dict[word] {
-                result.text = "No accent here"
+        let word = wordTyped.text!.lowercased()
+        if !word.isEmpty && isValidString(input:word) {
+            let dict = findDict(firstChar: word[(word.startIndex)])
+            if dict[word] != nil && !dict.isEmpty {
+                if word == dict[word] {
+                    result.text = "No accent here"
+                } else {
+                    result.text = dict[word]
+                }
             } else {
-                result.text = dict[word]
+                result.text = "No such word"
             }
+            //dismiss the keyboard once pressed submit
+            wordTyped.resignFirstResponder()
         } else {
-            result.text = "No such word"
+            //dismiss the keyboard is the input is empty
+            result.text = "Invalid input"
+            wordTyped.resignFirstResponder()
         }
-        //dismiss the keyboard once pressed submit
-        wordTyped.resignFirstResponder()
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        wordTyped.delegate = self
-    }
     //function that build a dictionary out of a json file
     //I prepared 26 json with 160000 spanish words
     //based on that letter it returns
@@ -43,6 +50,16 @@ class ViewController: UIViewController {
         catch {
             return [:]
         }
+    }
+    //funcation that makes sure all input is valid
+    func isValidString(input:String) -> Bool {
+        let alphabet = "abcdefghijklmnopqrstuvwxyz"
+        for letter in input {
+            if !alphabet.contains(letter) {
+                return false
+            }
+        }
+        return true
     }
 }
 
