@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="etj-P8-kn9">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,38 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="KOC-ry-nDS">
+            <objects>
+                <viewController id="etj-P8-kn9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WtZ-Ce-i5E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjx-Zu-Ang">
+                                <rect key="frame" x="150" y="495" width="114" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Try word">
+                                    <color key="titleColor" red="1" green="0.19242471481313372" blue="0.031619445513785149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="PwS-nd-Sbi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xVK-g2-tfZ" firstAttribute="bottom" secondItem="mjx-Zu-Ang" secondAttribute="bottom" constant="200" id="8hh-TZ-aZO"/>
+                            <constraint firstItem="xVK-g2-tfZ" firstAttribute="trailing" secondItem="mjx-Zu-Ang" secondAttribute="trailing" constant="150" id="Izd-y3-6qA"/>
+                            <constraint firstItem="mjx-Zu-Ang" firstAttribute="leading" secondItem="xVK-g2-tfZ" secondAttribute="leading" constant="150" id="ola-hF-UBZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xVK-g2-tfZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xeP-Q5-y1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-762.31884057971024" y="114.94565217391305"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
