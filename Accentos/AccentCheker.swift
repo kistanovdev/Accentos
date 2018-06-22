@@ -1,7 +1,7 @@
 import UIKit
 import Foundation
 
-class ViewController: UIViewController {
+class AccentChecker: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     }
     //funcation that makes sure all input is valid
     func isValidString(input:String) -> Bool {
-        let alphabet = "abcdefghijklmnopqrstuvwxyz"
+        let alphabet = "abcdefghijklmnopqrstuvwxyzñ"
         for letter in input {
             if !alphabet.contains(letter) {return false}
         }
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController : UITextFieldDelegate {
+extension AccentChecker : UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

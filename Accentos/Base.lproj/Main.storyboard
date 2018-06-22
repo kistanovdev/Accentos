@@ -11,6 +11,21 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="SZE-Yc-gOz">
+            <objects>
+                <viewController id="FlK-ZD-Use" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gfS-oh-aQA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bBp-1y-Rx8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GyK-L6-t4H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125" y="-161"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="KOC-ry-nDS">
             <objects>
                 <viewController id="etj-P8-kn9" sceneMemberID="viewController">
@@ -18,22 +33,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjx-Zu-Ang">
-                                <rect key="frame" x="150" y="495" width="114" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Try word">
-                                    <color key="titleColor" red="1" green="0.19242471481313372" blue="0.031619445513785149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="txO-Xd-jZM">
+                                <rect key="frame" x="50" y="486" width="314" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.67912927341364937" blue="0.49803333975453812" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="m7u-Er-OWy"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Check accent">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99768234131302436" green="1" blue="0.9775209254766154" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="28" name=".SFNSDisplay"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="PwS-nd-Sbi"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="dDr-rt-f9p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZA6-hQ-hKA">
+                                <rect key="frame" x="50" y="406" width="314" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.67912927339999996" blue="0.49803333979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="gPS-MF-gOY"/>
+                                    <constraint firstAttribute="height" constant="50" id="k1Y-kq-0Bu"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Syllabify">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99768234131302436" green="1" blue="0.9775209254766154" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="28" name=".SFNSDisplay"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="FlK-ZD-Use" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="wAT-zp-H4O"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xVK-g2-tfZ" firstAttribute="bottom" secondItem="mjx-Zu-Ang" secondAttribute="bottom" constant="200" id="8hh-TZ-aZO"/>
-                            <constraint firstItem="xVK-g2-tfZ" firstAttribute="trailing" secondItem="mjx-Zu-Ang" secondAttribute="trailing" constant="150" id="Izd-y3-6qA"/>
-                            <constraint firstItem="mjx-Zu-Ang" firstAttribute="leading" secondItem="xVK-g2-tfZ" secondAttribute="leading" constant="150" id="ola-hF-UBZ"/>
+                            <constraint firstItem="ZA6-hQ-hKA" firstAttribute="leading" secondItem="xVK-g2-tfZ" secondAttribute="leading" constant="50" id="DCu-bK-hPn"/>
+                            <constraint firstItem="txO-Xd-jZM" firstAttribute="top" secondItem="ZA6-hQ-hKA" secondAttribute="bottom" constant="30" id="Ocf-lP-9xN"/>
+                            <constraint firstItem="xVK-g2-tfZ" firstAttribute="bottom" secondItem="txO-Xd-jZM" secondAttribute="bottom" constant="200" id="Srm-Gy-7da"/>
+                            <constraint firstItem="xVK-g2-tfZ" firstAttribute="trailing" secondItem="ZA6-hQ-hKA" secondAttribute="trailing" constant="50" id="Z8m-6M-nmy"/>
+                            <constraint firstItem="xVK-g2-tfZ" firstAttribute="trailing" secondItem="txO-Xd-jZM" secondAttribute="trailing" constant="50" id="r9r-iE-wpt"/>
+                            <constraint firstItem="txO-Xd-jZM" firstAttribute="leading" secondItem="xVK-g2-tfZ" secondAttribute="leading" constant="50" id="zaz-Le-GAJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xVK-g2-tfZ"/>
                     </view>
@@ -42,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="-762.31884057971024" y="114.94565217391305"/>
         </scene>
-        <!--View Controller-->
+        <!--Accent Checker-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Accentos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AccentChecker" customModule="Accentos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,6 +161,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="eiE-CO-BKi"/>
                     <connections>
                         <outlet property="result" destination="BNu-Hd-MPQ" id="VkX-Rg-c2V"/>
                         <outlet property="wordInfo" destination="bdm-Iz-jq9" id="o0i-Zc-yyL"/>
@@ -118,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="88.405797101449281" y="114.94565217391305"/>
+            <point key="canvasLocation" x="126" y="541"/>
         </scene>
     </scenes>
 </document>
