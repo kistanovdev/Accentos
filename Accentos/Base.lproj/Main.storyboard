@@ -10,16 +10,54 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Syllabify-->
         <scene sceneID="SZE-Yc-gOz">
             <objects>
-                <viewController id="FlK-ZD-Use" sceneMemberID="viewController">
+                <viewController id="FlK-ZD-Use" customClass="Syllabify" customModule="Accentos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gfS-oh-aQA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your word..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B2M-dK-ogs">
+                                <rect key="frame" x="50" y="516" width="314" height="50"/>
+                                <color key="backgroundColor" red="0.82313855970000005" green="0.90766221170000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.72119804799999998" green="1" blue="0.4873204659" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pxb-jr-E4F"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDJ-qy-uRK">
+                                <rect key="frame" x="80" y="586" width="254" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.55044198339999995" blue="0.46372166310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rc4-FM-Dip"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                <state key="normal" title="Syllabify">
+                                    <color key="titleColor" red="0.9976823413" green="1" blue="0.97752092550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="wordWasSumbitted:" destination="FlK-ZD-Use" eventType="touchUpInside" id="Pf9-Ai-f1V"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.55044198339999995" blue="0.46372166310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bBp-1y-Rx8" firstAttribute="trailing" secondItem="B2M-dK-ogs" secondAttribute="trailing" constant="50" id="18o-vE-86D"/>
+                            <constraint firstItem="bBp-1y-Rx8" firstAttribute="trailing" secondItem="hDJ-qy-uRK" secondAttribute="trailing" constant="80" id="7UL-bm-i03"/>
+                            <constraint firstItem="B2M-dK-ogs" firstAttribute="leading" secondItem="bBp-1y-Rx8" secondAttribute="leading" constant="50" id="9zH-Mv-mSV"/>
+                            <constraint firstItem="bBp-1y-Rx8" firstAttribute="bottom" secondItem="hDJ-qy-uRK" secondAttribute="bottom" constant="100" id="MFf-yd-hqj"/>
+                            <constraint firstItem="hDJ-qy-uRK" firstAttribute="top" secondItem="B2M-dK-ogs" secondAttribute="bottom" constant="20" id="TbO-fb-ntt"/>
+                            <constraint firstItem="hDJ-qy-uRK" firstAttribute="leading" secondItem="bBp-1y-Rx8" secondAttribute="leading" constant="80" id="qfl-gI-SZI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bBp-1y-Rx8"/>
                     </view>
+                    <connections>
+                        <outlet property="wordTyped" destination="B2M-dK-ogs" id="Beg-7I-F78"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GyK-L6-t4H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,7 +156,7 @@
                                     <constraint firstAttribute="height" constant="50" id="Y6v-2V-XVr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
-                                <state key="normal" title="Submit"/>
+                                <state key="normal" title="Search"/>
                                 <connections>
                                     <action selector="wordSubmitted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AOB-jL-frC"/>
                                 </connections>
