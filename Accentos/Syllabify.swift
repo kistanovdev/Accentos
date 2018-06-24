@@ -21,6 +21,10 @@ class Syllabify: UIViewController {
     }
     @IBOutlet weak var wordTyped: UITextField!
     
+    @IBOutlet weak var result: UILabel!
+    
     @IBAction func wordWasSumbitted(_ sender: Any) {
+        var syllables = Syllabifyer(word:wordTyped.text!).getSyllables()
+        result.text = syllables.joined(separator: "-")
     }
 }

@@ -6,6 +6,11 @@ class AccentChecker: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         wordTyped.delegate = self
+        let dict = findDict(firstChar: "a")
+        for word in dict {
+            print(word)
+        }
+        //
     }
     
     //the three fields that are responsible
