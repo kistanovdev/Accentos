@@ -6,7 +6,11 @@
 //  Copyright © 2018 Daniil Kistanov. All rights reserved.
 //
 
-import Foundation
 import UIKit
-@IBDesignable
-class GradientView: 
+
+class Entrance: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
