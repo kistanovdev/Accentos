@@ -6,11 +6,6 @@ class AccentChecker: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         wordTyped.delegate = self
-        let dict = findDict(firstChar: "a")
-        for word in dict {
-            print(word)
-        }
-        //
     }
     
     //the three fields that are responsible
@@ -21,13 +16,17 @@ class AccentChecker: UIViewController {
     @IBOutlet weak var wordInfo: UILabel!
     
     @IBAction func wordSubmitted(_ sender: Any) {
+        //take input
         let word = wordTyped.text!.lowercased()
-        if !word.isEmpty && isValidString(input:word) {
+        if !word.isEmpty && isValidString(input:word) {//validate
+            //generate the duct
             let dict = findDict(firstChar: word[(word.startIndex)])
             if dict[word] != nil {//if key exists
                 if word == dict[word] {result.text = "No accent here"}
                 else {result.text = dict[word]}
-            } else {result.text = "No such word"}
+            } else {
+                result.text = "No such word"
+            }
             //dismiss the keyboard once pressed submit
             wordTyped.resignFirstResponder()
         } else {

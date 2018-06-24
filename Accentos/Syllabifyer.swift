@@ -10,11 +10,11 @@ import Foundation
 import UIKit
 
 class Syllabifyer {
-    var stressedFound: Bool
-    var word: String
-    var stressed: Int
-    var letterAccent: Int
-    var positions: [Int]
+    private var stressedFound: Bool
+    private var word: String
+    private var stressed: Int
+    private var letterAccent: Int
+    private var positions: [Int]
     
     init(word:String) {
         self.word = word.lowercased()
@@ -40,7 +40,7 @@ class Syllabifyer {
     /**
      Processes the word and returns indexes of syllables
      */
-    func process() {
+    private func process() {
         var numSyl = 0
         var i = 0
         //go through each index
@@ -81,7 +81,7 @@ class Syllabifyer {
       - parameter pos: current index
       - returns pos: processed position
      */
-    func onset(pos: inout Int) -> Int {
+    private func onset(pos: inout Int) -> Int {
         var lastConsonant: Character = "a"
         
         while pos < word.count && (isConsonant(letter: charAt(at: pos)) && charAt(at: pos) != "y") {
@@ -112,7 +112,7 @@ class Syllabifyer {
      * Determines the nucleus of current syllable whose onset ending on pos - 1
      * and changes pos to the follow position behind of nucleus
      **/
-    func nucleus(pos:inout Int) -> Int {
+    private func nucleus(pos:inout Int) -> Int {
         // Saves the type of previous vowel when two vowels together exists
         var previous:Int = 0
         // 0 = open
@@ -211,7 +211,7 @@ class Syllabifyer {
         return pos
     }
     
-    func coda(pos:inout Int) -> Int {
+    private func coda(pos:inout Int) -> Int {
         if pos >= word.count || !isConsonant(letter: charAt(at: pos)) {
             // Syllable hasn't coda
             return pos
@@ -307,16 +307,16 @@ class Syllabifyer {
         }
         return pos
     }
-    func isConsonant(letter:Character) -> Bool {
+    private func isConsonant(letter:Character) -> Bool {
         return "bcdfghjklmnpqrstvwxyzñ".contains(letter)
     }
     //javalike function to get a char
     //Index.Strings aren't very comfortable to use
-    func charAt(at:Int) -> Character {
+    private func charAt(at:Int) -> Character {
         return word[word.index(word.startIndex, offsetBy: at)]
     }
     //substring function using substring classes
-    func slice(input:String, from: Int, to: Int) -> String {
+    private func slice(input:String, from: Int, to: Int) -> String {
         let start = input.index(input.startIndex, offsetBy: from)
         let end = input.index(input.startIndex, offsetBy: to)
         let substring = start..<end
