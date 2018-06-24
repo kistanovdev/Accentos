@@ -24,7 +24,7 @@ class Syllabifyer {
         self.positions = []
         process()
     }
-    func getSyllables() -> [String] {
+    public func getSyllables() -> [String] {
         var syllables = [String]()
         for i in 0...positions.count - 1 {
             let start = positions[i]
