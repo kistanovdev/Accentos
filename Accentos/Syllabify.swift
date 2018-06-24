@@ -16,15 +16,26 @@ import UIKit
 
 class Syllabify: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     @IBOutlet weak var wordTyped: UITextField!
     
     @IBOutlet weak var result: UILabel!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        wordTyped.delegate = self
+        
+    }
+    
     @IBAction func wordWasSumbitted(_ sender: Any) {
         let syllables = Syllabifyer(word:wordTyped.text!).getSyllables()
         result.text = syllables.joined(separator: "-")
+        wordTyped.resignFirstResponder()
+        wordTyped.text?.removeAll()
+    }
+}
+extension Syllabify : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
