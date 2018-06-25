@@ -27,10 +27,29 @@ class Syllabify: UIViewController {
     }
     
     @IBAction func wordWasSumbitted(_ sender: Any) {
-        let syllables = Syllabifyer(word:wordTyped.text!).getSyllables()
-        result.text = syllables.joined(separator: "-")
-        wordTyped.resignFirstResponder()
-        wordTyped.text?.removeAll()
+        let input = wordTyped.text!
+        if isValid(input: input) && !input.isEmpty {
+            let syllables = Syllabifyer(word:input).getSyllables()
+            result.text = syllables.joined(separator: "-")
+            wordTyped.resignFirstResponder()
+            wordTyped.text?.removeAll()
+        } else {
+            let shakeAnimation = CABasicAnimation(keyPath: "position")
+            shakeAnimation.duration = 0.07
+            shakeAnimation.repeatCount = 4
+            shakeAnimation.autoreverses = true
+            shakeAnimation.fromValue = NSValue(cgPoint: CGPoint(x: wordTyped.center.x - 15, y: wordTyped.center.y))
+            shakeAnimation.toValue = NSValue(cgPoint: CGPoint(x: wordTyped.center.x + 15, y: wordTyped.center.y))
+            wordTyped.layer.add(shakeAnimation, forKey: "position")
+        }
+    }
+    func isValid(input:String) -> Bool {
+        for letter in input {
+            if !"abcdefghijklmnopqrstuvwxyzáéóíúü".contains(letter) {
+                return false
+            }
+        }
+        return true
     }
 }
 extension Syllabify : UITextFieldDelegate {
