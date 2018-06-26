@@ -20,6 +20,9 @@ class Syllabify: UIViewController {
     
     @IBOutlet weak var result: UILabel!
     
+    @IBAction func closeView(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         wordTyped.delegate = self
@@ -41,6 +44,7 @@ class Syllabify: UIViewController {
             shakeAnimation.fromValue = NSValue(cgPoint: CGPoint(x: wordTyped.center.x - 15, y: wordTyped.center.y))
             shakeAnimation.toValue = NSValue(cgPoint: CGPoint(x: wordTyped.center.x + 15, y: wordTyped.center.y))
             wordTyped.layer.add(shakeAnimation, forKey: "position")
+            wordTyped.resignFirstResponder()
         }
     }
     func isValid(input:String) -> Bool {

@@ -68,11 +68,24 @@
                                     <constraint firstItem="dIo-XX-qkj" firstAttribute="leading" secondItem="hmF-F0-gWQ" secondAttribute="leading" constant="25" id="vlW-qc-D9u"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlF-8i-VEt">
+                                <rect key="frame" x="5" y="25" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YBe-ER-bpd"/>
+                                    <constraint firstAttribute="width" constant="50" id="io8-PF-ftK"/>
+                                </constraints>
+                                <state key="normal" image="Arrows-Back-icon"/>
+                                <connections>
+                                    <action selector="closeView:" destination="FlK-ZD-Use" eventType="touchUpInside" id="q19-8D-Yvy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99215686270000003" green="0.62745098040000002" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="bBp-1y-Rx8" firstAttribute="bottom" secondItem="hmF-F0-gWQ" secondAttribute="bottom" constant="250" id="180-ur-542"/>
+                            <constraint firstItem="vlF-8i-VEt" firstAttribute="top" secondItem="bBp-1y-Rx8" secondAttribute="top" constant="5" id="HwJ-cq-hOP"/>
+                            <constraint firstItem="vlF-8i-VEt" firstAttribute="leading" secondItem="bBp-1y-Rx8" secondAttribute="leading" constant="5" id="Iic-9N-FYz"/>
                             <constraint firstItem="bBp-1y-Rx8" firstAttribute="trailing" secondItem="hmF-F0-gWQ" secondAttribute="trailing" id="VpY-lS-4I8"/>
                             <constraint firstItem="hmF-F0-gWQ" firstAttribute="leading" secondItem="bBp-1y-Rx8" secondAttribute="leading" id="yCM-k0-mLv"/>
                         </constraints>
@@ -85,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GyK-L6-t4H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="126" y="-539"/>
+            <point key="canvasLocation" x="124.6376811594203" y="-539.67391304347825"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KOC-ry-nDS">
@@ -351,4 +364,7 @@
             <point key="canvasLocation" x="126" y="827"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Arrows-Back-icon" width="512" height="512"/>
+    </resources>
 </document>
