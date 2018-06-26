@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4B09B2D620DDA4CB00E8721D /* Syllabify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B09B2D520DDA4CB00E8721D /* Syllabify.swift */; };
-		4B71268020DF86F0002B024D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71267F20DF86F0002B024D /* GradientView.swift */; };
 		4B71268220DFADC0002B024D /* Entrance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71268120DFADC0002B024D /* Entrance.swift */; };
 		4B826A6F20D8763E00BEAEEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B826A6E20D8763E00BEAEEB /* AppDelegate.swift */; };
 		4B826A7120D8763E00BEAEEB /* AccentCheker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B826A7020D8763E00BEAEEB /* AccentCheker.swift */; };
@@ -67,7 +66,6 @@
 
 /* Begin PBXFileReference section */
 		4B09B2D520DDA4CB00E8721D /* Syllabify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syllabify.swift; sourceTree = "<group>"; };
-		4B71267F20DF86F0002B024D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		4B71268120DFADC0002B024D /* Entrance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entrance.swift; sourceTree = "<group>"; };
 		4B826A6B20D8763E00BEAEEB /* Accentos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accentos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B826A6E20D8763E00BEAEEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 		4B826A6D20D8763E00BEAEEB /* Accentos */ = {
 			isa = PBXGroup;
 			children = (
-				4B71267F20DF86F0002B024D /* GradientView.swift */,
 				4B826A6E20D8763E00BEAEEB /* AppDelegate.swift */,
 				4B826A7020D8763E00BEAEEB /* AccentCheker.swift */,
 				4BFE025520DE248200C47524 /* Syllabifyer.swift */,
@@ -381,7 +378,6 @@
 			files = (
 				4BFE025620DE248200C47524 /* Syllabifyer.swift in Sources */,
 				4B826A7120D8763E00BEAEEB /* AccentCheker.swift in Sources */,
-				4B71268020DF86F0002B024D /* GradientView.swift in Sources */,
 				4B71268220DFADC0002B024D /* Entrance.swift in Sources */,
 				4B09B2D620DDA4CB00E8721D /* Syllabify.swift in Sources */,
 				4B826A6F20D8763E00BEAEEB /* AppDelegate.swift in Sources */,

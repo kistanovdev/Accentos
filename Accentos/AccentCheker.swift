@@ -8,12 +8,17 @@ class AccentChecker: UIViewController {
         wordTyped.delegate = self
     }
     
+    @IBAction func closeViewWithGesture(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func closeView(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     //the three fields that are responsible
     //find the word
     //find the json file matching the first letter
     @IBOutlet weak var result: UILabel!
     @IBOutlet weak var wordTyped: UITextField!
-    @IBOutlet weak var wordInfo: UILabel!
     
     @IBAction func wordSubmitted(_ sender: Any) {
         //take input
@@ -34,7 +39,6 @@ class AccentChecker: UIViewController {
             result.text = "Invalid input"
             wordTyped.resignFirstResponder()
         }
-        wordInfo.text = "You typed " + word
         wordTyped.text = ""
     }
     
