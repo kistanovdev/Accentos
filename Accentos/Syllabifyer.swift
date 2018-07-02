@@ -47,10 +47,14 @@ class Syllabifyer {
         while i < word.count  {
             positions.append(i)
             numSyl += 1
+            print(charAt(at: i))
             //check for different conditions and advance if needed
             i = onset(pos: &i)
+            print("process was finished onset")
             i = nucleus(pos: &i)
+            print("process was finished nucleus")
             i = coda(pos: &i)
+            print("process was finished code")
             if stressedFound && stressed == 0 {
                 stressed = numSyl
             }
@@ -74,6 +78,7 @@ class Syllabifyer {
                 }
             }
         }
+        
     }
     /**
       Determines the onset of the current syllable whose begins in pos
@@ -130,7 +135,8 @@ class Syllabifyer {
             case "á", "é", "ó" :
                 letterAccent = pos
                 stressedFound = true
-                break
+                previous = 0
+                pos += 1
             // Open-vowel
             case "a", "e", "o":
                 previous = 0
@@ -146,7 +152,7 @@ class Syllabifyer {
                 previous = 2
                 pos += 1
             default:
-                break
+                print()
             }
         }
         // If 'h' has been inserted in the nucleus
