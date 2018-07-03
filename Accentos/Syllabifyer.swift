@@ -47,14 +47,10 @@ class Syllabifyer {
         while i < word.count  {
             positions.append(i)
             numSyl += 1
-            print(charAt(at: i))
             //check for different conditions and advance if needed
             i = onset(pos: &i)
-            print("process was finished onset")
             i = nucleus(pos: &i)
-            print("process was finished nucleus")
             i = coda(pos: &i)
-            print("process was finished code")
             if stressedFound && stressed == 0 {
                 stressed = numSyl
             }
@@ -233,14 +229,15 @@ class Syllabifyer {
         
         let c1: Character = charAt(at: pos)
         let c2: Character = charAt(at: pos+1)
-        let c3: Character = charAt(at: pos+2)
+        
         
         // Has the syllable a third consecutive consonant?
         if pos < word.count - 2 {
-            
+            let c3: Character = charAt(at: pos+2)
             let pair: String = String(c1) + String(c2)
             
             if !isConsonant(letter: charAt(at: pos+2)) {
+                
                 // There isn't third consonant
                 // The groups ll, ch and rr begin a syllable
                 if ["ll","ch","rr"].contains(pair) {return pos}
@@ -297,7 +294,7 @@ class Syllabifyer {
                 // separated and they always begin syllable
                 // 'ch'
                 // 'y' as vowel
-                if "lr".contains(c3) || (c2 == "C" && c3 == "h") || c3 == "y" {
+                if "lr".contains(c3) || (c2 == "c" && c3 == "h") || c3 == "y" {
                     pos += 1// Following syllable begins in c2
                 } else {
                     pos += 2// c3 begins the following syllable

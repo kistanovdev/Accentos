@@ -8,10 +8,8 @@ class AccentChecker: UIViewController {
         wordTyped.delegate = self
     }
     
-    @IBAction func closeViewWithGesture(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
     @IBAction func closeView(_ sender: Any) {
+        wordTyped.resignFirstResponder()
         self.dismiss(animated: true, completion: nil)
     }
     //the three fields that are responsible

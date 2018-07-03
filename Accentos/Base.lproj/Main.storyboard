@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="etj-P8-kn9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="etj-P8-kn9">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -80,7 +80,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.99215686270000003" green="0.62745098040000002" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.63007298382465748" blue="0.56442689449315064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="bBp-1y-Rx8" firstAttribute="bottom" secondItem="hmF-F0-gWQ" secondAttribute="bottom" constant="250" id="180-ur-542"/>
@@ -126,7 +126,7 @@
                                         <rect key="frame" x="0.0" y="137" width="320" height="137"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edE-KS-tY6">
-                                                <rect key="frame" x="70.5" y="-28" width="180" height="60"/>
+                                                <rect key="frame" x="70" y="-28" width="180" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="9is-Eo-W6U"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="dun-P6-70J"/>
@@ -166,7 +166,7 @@
                                         <rect key="frame" x="0.0" y="274" width="320" height="137"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCp-PZ-vDh">
-                                                <rect key="frame" x="70.5" y="-28" width="180" height="60"/>
+                                                <rect key="frame" x="70" y="-28" width="180" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="4np-No-9Dm"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="KnT-7j-aYU"/>
@@ -205,7 +205,7 @@
                                         <rect key="frame" x="0.0" y="411" width="320" height="137"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmA-tP-ulh">
-                                                <rect key="frame" x="70.5" y="-28" width="180" height="60"/>
+                                                <rect key="frame" x="70" y="-28" width="180" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="2cZ-or-ju1"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="kzQ-Fd-cQf"/>
@@ -365,8 +365,8 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzT-r0-zoA">
                                 <rect key="frame" x="5" y="35" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="40" id="T9K-qi-Nyw"/>
-                                    <constraint firstAttribute="height" constant="40" id="otl-wE-d3m"/>
+                                    <constraint firstAttribute="height" constant="40" id="4xf-GB-rtv"/>
+                                    <constraint firstAttribute="width" constant="40" id="x9X-Xk-GjP"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Arrows-Back-icon"/>
                                 <connections>
@@ -378,9 +378,9 @@
                         <constraints>
                             <constraint firstItem="Hm2-Q8-wlh" firstAttribute="top" secondItem="wGz-47-1yY" secondAttribute="top" constant="100" id="4f6-Jc-LAW"/>
                             <constraint firstItem="Hm2-Q8-wlh" firstAttribute="leading" secondItem="wGz-47-1yY" secondAttribute="leading" constant="50" id="PjL-sP-aFn"/>
-                            <constraint firstItem="tzT-r0-zoA" firstAttribute="leading" secondItem="wGz-47-1yY" secondAttribute="leading" constant="5" id="eqR-Ez-nT8"/>
+                            <constraint firstItem="tzT-r0-zoA" firstAttribute="leading" secondItem="wGz-47-1yY" secondAttribute="leading" constant="5" id="St2-Kl-mVi"/>
                             <constraint firstItem="wGz-47-1yY" firstAttribute="trailing" secondItem="Hm2-Q8-wlh" secondAttribute="trailing" constant="50" id="km1-cr-Mv0"/>
-                            <constraint firstItem="tzT-r0-zoA" firstAttribute="top" secondItem="wGz-47-1yY" secondAttribute="top" constant="15" id="mTd-SI-QuE"/>
+                            <constraint firstItem="tzT-r0-zoA" firstAttribute="top" secondItem="wGz-47-1yY" secondAttribute="top" constant="15" id="zTO-2p-vFA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wGz-47-1yY"/>
                     </view>

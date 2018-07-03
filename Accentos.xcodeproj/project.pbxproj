@@ -74,7 +74,7 @@
 		4B826A7020D8763E00BEAEEB /* AccentCheker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentCheker.swift; sourceTree = "<group>"; };
 		4B826A7320D8763E00BEAEEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B826A7620D8763E00BEAEEB /* Accentos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Accentos.xcdatamodel; sourceTree = "<group>"; };
-		4B826A7820D8764000BEAEEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B826A7820D8764000BEAEEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Accentos/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		4B826A7B20D8764000BEAEEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B826A7D20D8764000BEAEEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B826A8220D8764000BEAEEB /* AccentosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccentosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -289,6 +289,7 @@
 				TargetAttributes = {
 					4B826A6A20D8763E00BEAEEB = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					4B826A8120D8764000BEAEEB = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -568,7 +569,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kistanod.Accentos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -587,7 +588,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kistanod.Accentos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

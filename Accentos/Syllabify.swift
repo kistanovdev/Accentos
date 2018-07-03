@@ -16,19 +16,20 @@ import UIKit
 
 class Syllabify: UIViewController {
     
-    @IBOutlet weak var wordTyped: UITextField!
-    
-    @IBOutlet weak var result: UILabel!
-    
-    @IBAction func closeView(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         wordTyped.delegate = self
         
     }
     
+    @IBOutlet weak var wordTyped: UITextField!
+    @IBOutlet weak var result: UILabel!
+    
+    @IBAction func closeView(_ sender: Any) {
+        wordTyped.resignFirstResponder()
+        self.dismiss(animated: true, completion: nil)
+    }
+    //function that handles the processing of the word
     @IBAction func wordWasSumbitted(_ sender: Any) {
         let input = wordTyped.text!
         if isValid(input: input) && !input.isEmpty {
@@ -37,16 +38,12 @@ class Syllabify: UIViewController {
             wordTyped.resignFirstResponder()
             wordTyped.text?.removeAll()
         } else {
-            let shakeAnimation = CABasicAnimation(keyPath: "position")
-            shakeAnimation.duration = 0.07
-            shakeAnimation.repeatCount = 4
-            shakeAnimation.autoreverses = true
-            shakeAnimation.fromValue = NSValue(cgPoint: CGPoint(x: wordTyped.center.x - 15, y: wordTyped.center.y))
-            shakeAnimation.toValue = NSValue(cgPoint: CGPoint(x: wordTyped.center.x + 15, y: wordTyped.center.y))
-            wordTyped.layer.add(shakeAnimation, forKey: "position")
+            shakeItem(item: wordTyped)
             wordTyped.resignFirstResponder()
+            
         }
     }
+    
     func isValid(input:String) -> Bool {
         for letter in input {
             if !"abcdefghijklmnopqrstuvwxyzáéóíúü".contains(letter) {
@@ -54,6 +51,16 @@ class Syllabify: UIViewController {
             }
         }
         return true
+    }
+    //function that handles the shake action
+    func shakeItem(item: UITextField) {
+        let shakeAnimation = CABasicAnimation(keyPath: "position")
+        shakeAnimation.duration = 0.07
+        shakeAnimation.repeatCount = 3
+        shakeAnimation.autoreverses = true
+        shakeAnimation.fromValue = NSValue(cgPoint: CGPoint(x: wordTyped.center.x - 15, y: wordTyped.center.y))
+        shakeAnimation.toValue = NSValue(cgPoint: CGPoint(x: wordTyped.center.x + 15, y: wordTyped.center.y))
+        item.layer.add(shakeAnimation, forKey: "position")
     }
 }
 extension Syllabify : UITextFieldDelegate {
