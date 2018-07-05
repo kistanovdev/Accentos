@@ -104,6 +104,36 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.99158376459999997" green="0.62639492750000003" blue="0.56757730250000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.99158376459999997" green="0.62639492750000003" blue="0.56757730250000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WordCell" rowHeight="80" id="qec-RD-P1X" customClass="TableViewCell" customModule="Accentos">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qec-RD-P1X" id="tJo-Nm-83F">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwx-pg-TtA">
+                                                    <rect key="frame" x="10" y="2" width="200" height="75.666666666666671"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="iXe-Pd-X4D"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.99158376459999997" green="0.62639492750000003" blue="0.56757730250000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="Zwx-pg-TtA" firstAttribute="leading" secondItem="tJo-Nm-83F" secondAttribute="leading" constant="10" id="Jv3-mK-HoN"/>
+                                                <constraint firstAttribute="bottom" secondItem="Zwx-pg-TtA" secondAttribute="bottom" constant="2" id="ReB-i2-JLk"/>
+                                                <constraint firstItem="Zwx-pg-TtA" firstAttribute="top" secondItem="tJo-Nm-83F" secondAttribute="top" constant="2" id="ay6-XV-G9Y"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="word" destination="Zwx-pg-TtA" id="cJc-YR-YWg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.99215686270000003" green="0.62745098040000002" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -127,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="317.60000000000002" y="-198.02955665024632"/>
+            <point key="canvasLocation" x="256.80000000000001" y="-179.55665024630542"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OMB-Vt-m4z">
@@ -187,7 +217,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yc2-Ee-6hc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="943" y="180"/>
+            <point key="canvasLocation" x="1207" y="468"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9aQ-NE-55R">

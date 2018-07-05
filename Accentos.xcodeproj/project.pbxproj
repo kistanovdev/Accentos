@@ -10,7 +10,6 @@
 		4B09B2D620DDA4CB00E8721D /* Syllabify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B09B2D520DDA4CB00E8721D /* Syllabify.swift */; };
 		4B5CF74820EDBBE900A82F6F /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5CF74720EDBBE900A82F6F /* Rules.swift */; };
 		4B5CF74A20EDBC0C00A82F6F /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5CF74920EDBC0C00A82F6F /* Lessons.swift */; };
-		4B71268220DFADC0002B024D /* Entrance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71268120DFADC0002B024D /* Entrance.swift */; };
 		4B826A6F20D8763E00BEAEEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B826A6E20D8763E00BEAEEB /* AppDelegate.swift */; };
 		4B826A7120D8763E00BEAEEB /* AccentCheker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B826A7020D8763E00BEAEEB /* AccentCheker.swift */; };
 		4B826A7420D8763E00BEAEEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B826A7220D8763E00BEAEEB /* Main.storyboard */; };
@@ -20,6 +19,8 @@
 		4BA25B1720DAFB5A0019D380 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BA25B1620DAFB5A0019D380 /* GoogleService-Info.plist */; };
 		4BB322BE20EDE2B700D3F615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BB322BD20EDE2B600D3F615 /* Assets.xcassets */; };
 		4BB322C020EE005600D3F615 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BB322BF20EE005600D3F615 /* data.json */; };
+		4BB322C220EEC5BE00D3F615 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB322C120EEC5BE00D3F615 /* TableViewCell.swift */; };
+		4BB322C420EEC84700D3F615 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB322C320EEC84700D3F615 /* Word.swift */; };
 		4BFE025620DE248200C47524 /* Syllabifyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE025520DE248200C47524 /* Syllabifyer.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +45,6 @@
 		4B09B2D520DDA4CB00E8721D /* Syllabify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syllabify.swift; sourceTree = "<group>"; };
 		4B5CF74720EDBBE900A82F6F /* Rules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
 		4B5CF74920EDBC0C00A82F6F /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
-		4B71268120DFADC0002B024D /* Entrance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entrance.swift; sourceTree = "<group>"; };
 		4B826A6B20D8763E00BEAEEB /* Accentos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accentos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B826A6E20D8763E00BEAEEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B826A7020D8763E00BEAEEB /* AccentCheker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentCheker.swift; sourceTree = "<group>"; };
@@ -60,6 +60,8 @@
 		4BA25B1620DAFB5A0019D380 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4BB322BD20EDE2B600D3F615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BB322BF20EE005600D3F615 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		4BB322C120EEC5BE00D3F615 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4BB322C320EEC84700D3F615 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		4BFE025520DE248200C47524 /* Syllabifyer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syllabifyer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,13 +113,14 @@
 		4B826A6D20D8763E00BEAEEB /* Accentos */ = {
 			isa = PBXGroup;
 			children = (
-				4B5CF74720EDBBE900A82F6F /* Rules.swift */,
-				4B5CF74920EDBC0C00A82F6F /* Lessons.swift */,
 				4B826A6E20D8763E00BEAEEB /* AppDelegate.swift */,
+				4B09B2D520DDA4CB00E8721D /* Syllabify.swift */,
 				4B826A7020D8763E00BEAEEB /* AccentCheker.swift */,
 				4BFE025520DE248200C47524 /* Syllabifyer.swift */,
-				4B71268120DFADC0002B024D /* Entrance.swift */,
-				4B09B2D520DDA4CB00E8721D /* Syllabify.swift */,
+				4B5CF74720EDBBE900A82F6F /* Rules.swift */,
+				4B5CF74920EDBC0C00A82F6F /* Lessons.swift */,
+				4BB322C120EEC5BE00D3F615 /* TableViewCell.swift */,
+				4BB322C320EEC84700D3F615 /* Word.swift */,
 				4B826A7220D8763E00BEAEEB /* Main.storyboard */,
 				4BB322BF20EE005600D3F615 /* data.json */,
 				4BB322BD20EDE2B600D3F615 /* Assets.xcassets */,
@@ -281,9 +284,10 @@
 			files = (
 				4B5CF74A20EDBC0C00A82F6F /* Lessons.swift in Sources */,
 				4BFE025620DE248200C47524 /* Syllabifyer.swift in Sources */,
+				4BB322C420EEC84700D3F615 /* Word.swift in Sources */,
 				4B5CF74820EDBBE900A82F6F /* Rules.swift in Sources */,
+				4BB322C220EEC5BE00D3F615 /* TableViewCell.swift in Sources */,
 				4B826A7120D8763E00BEAEEB /* AccentCheker.swift in Sources */,
-				4B71268220DFADC0002B024D /* Entrance.swift in Sources */,
 				4B09B2D620DDA4CB00E8721D /* Syllabify.swift in Sources */,
 				4B826A6F20D8763E00BEAEEB /* AppDelegate.swift in Sources */,
 				4B826A7720D8763E00BEAEEB /* Accentos.xcdatamodeld in Sources */,
