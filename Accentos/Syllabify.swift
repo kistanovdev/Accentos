@@ -16,6 +16,9 @@ import UIKit
 
 class Syllabify: UIViewController {
     
+    @IBAction func closeView(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         wordTyped.delegate = self
@@ -25,10 +28,7 @@ class Syllabify: UIViewController {
     @IBOutlet weak var wordTyped: UITextField!
     @IBOutlet weak var result: UILabel!
     
-    @IBAction func closeView(_ sender: Any) {
-        wordTyped.resignFirstResponder()
-        self.dismiss(animated: true, completion: nil)
-    }
+    
     //function that handles the processing of the word
     @IBAction func wordWasSumbitted(_ sender: Any) {
         let input = wordTyped.text!
